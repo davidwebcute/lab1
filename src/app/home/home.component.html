@@ -1,0 +1,9 @@
+<div class="container">
+  
+  <h1>Hello there, welcome to use tax calclator!</h1>
+
+  <p *ngIf="!auth.isLoggedIn()" >Won't you please <a routerLink="/login">sign in</a> or <a routerLink="/register">register</a>?</p>
+  
+  <p *ngIf="auth.isLoggedIn()" ><a routerLink="/taxcalcrecord-create">Calculate tax</a></p>
+   
+</div>

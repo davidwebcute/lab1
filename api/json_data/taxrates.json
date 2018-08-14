@@ -1,0 +1,36 @@
+[
+    {
+        "fyear": 2018,
+        "txRates" : 
+        [
+            {"min": 0, "max":18200, "rate": 0.00, "baseSubTotalTax": null },
+            {"min": 18200, "max":37000, "rate": 0.19, "baseSubTotalTax" : null  },
+            {"min": 37000, "max":87000, "rate": 0.325, "baseSubTotalTax": 3572.00 },
+            {"min": 87000, "max":180000, "rate": 0.37, "baseSubTotalTax": 19822.00 },
+            {"min": 180000, "max":null, "rate": 0.45, "baseSubTotalTax": 54232.00 }
+        ]
+    },
+    {
+        "fyear": 2017,
+        "txRates" : 
+        [
+            {"min": 0, "max":18200, "rate": 0.00, "baseSubTotalTax": null },
+            {"min": 18200, "max":37000, "rate": 0.19, "baseSubTotalTax" : null  },
+            {"min": 37000, "max":87000, "rate": 0.325, "baseSubTotalTax": 3572.00 },
+            {"min": 87000, "max":180000, "rate": 0.37, "baseSubTotalTax": 19822.00 },
+            {"min": 180000, "max":null, "rate": 0.45, "baseSubTotalTax": 54232.00 }
+        ]
+    },
+    {
+        "fyear": 2016,
+        "txRates" : 
+        [
+            {"min": 0, "max":18200, "rate": 0.00, "baseSubTotalTax": null },
+            {"min": 18200, "max":37000, "rate": 0.19, "baseSubTotalTax" : null  },
+            {"min": 37000, "max":87000, "rate": 0.325, "baseSubTotalTax": 3572.00 },
+            {"min": 87000, "max":180000, "rate": 0.37, "baseSubTotalTax": 19822.00 },
+            {"min": 180000, "max":null, "rate": 0.45, "baseSubTotalTax": 54232.00 }
+        ]
+    }
+
+]

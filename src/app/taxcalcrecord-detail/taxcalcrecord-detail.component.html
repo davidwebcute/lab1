@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>{{ record.user_email }}</h1>
+  <dl class="list">
+  
+    <dt>FY Year</dt>
+    <dd>{{ record.financial_year }}</dd>
+    <dt>Annual Income</dt>
+    <dd>{{ record.annual_income }}</dd>
+    <dt>Super rate</dt>
+    <dd>{{ record.super_rate }}</dd>
+    <dt>Is super included</dt>
+    <dd>{{ record.is_include_super }}</dd>
+    <dt>Superannuation</dt>
+    <dd>{{ record.superannuation }}</dd>
+	
+	<dt>Gross amount</dt>
+    <dd>{{ record.gross_amount }}</dd>
+    <dt>Gross amount(Inc. Super)</dt>
+    <dd>{{ record.gross_super_amount }}</dd>
+    <dt>Tax amount</dt>
+    <dd>{{ record.tax_amount }}</dd>
+    <dt>Net amount</dt>
+    <dd>{{ record.net_amount }}</dd>
+    <dt>Net amount(Inc. Super)</dt>
+    <dd>{{ record.net_super_amount }}</dd>
+	<dt>Created date</dt>
+    <dd>{{ record.created_date }}</dd>
+
+  </dl>
+</div>

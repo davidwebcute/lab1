@@ -1,0 +1,66 @@
+<div class="container">
+  <h1>Calculate Tax</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <form (ngSubmit)="calSaveTaxcalcrecord()" #taxcalcrecordForm="ngForm">
+        <div class="form-group">
+          <label for="user_email">User Email</label>
+          <input type="text" class="form-control" [(ngModel)]="record.user_email" name="user_email" [readonly]="true" required>
+        </div>
+        <div class="form-group">
+          <label for="financial_year">FY Year</label>
+          <input type="number" class="form-control" [(ngModel)]="record.financial_year" name="financial_year" required>
+        </div>
+        <div class="form-group">
+          <label for="annual_income">Annual Income</label>
+          <input type="number" class="form-control" [(ngModel)]="record.annual_income" name="annual_income" required>
+        </div>
+
+        <div class="form-group">
+          <label for="super_rate">Super rate(eg: 0.095, 9.5%)</label>
+          <input type="number" class="form-control" [(ngModel)]="record.super_rate" name="super_rate" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="is_include_super">Is super included</label>
+          <input type="checkbox" class="form-control" [(ngModel)]="record.is_include_super" name="is_include_super" >
+        </div>
+
+        <div class="form-group">
+          <label for="superannuation">Superannuation</label>
+          <input type="number" class="form-control" [ngModel]="record.superannuation" [readonly]="true" name="superannuation" >
+        </div>
+
+        <div class="form-group">
+          <label for="gross_amount">Gross amount</label>
+          <input type="number" class="form-control" [ngModel]="record.gross_amount" [readonly]="true" name="gross_amount" >
+        </div>
+
+        <div class="form-group">
+          <label for="gross_super_amount">Gross amount(Inc. Super)</label>
+          <input type="number" class="form-control" [ngModel]="record.gross_super_amount" [readonly]="true" name="gross_super_amount" >
+        </div>
+
+        <div class="form-group">
+          <label for="tax_amount">Tax amount</label>
+          <input type="number" class="form-control" [ngModel]="record.tax_amount" [readonly]="true" name="tax_amount" >
+        </div>
+
+        <div class="form-group">
+          <label for="net_amount">Net amount</label>
+          <input type="number" class="form-control" [ngModel]="record.net_amount" [readonly]="true" name="net_amount" >
+        </div>
+
+        <div class="form-group">
+          <label for="net_super_amount">Net amount(Inc. Super)</label>
+          <input type="number" class="form-control" [ngModel]="record.net_super_amount" [readonly]="true" name="net_super_amount" >
+        </div>
+       
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-success" [disabled]="!taxcalcrecordForm.form.valid">Calculate & Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
