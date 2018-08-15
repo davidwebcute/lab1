@@ -1,7 +1,7 @@
 <div class="container">
   <h1>Tax Calculation Record List
     <a [routerLink]="['/taxcalcrecord-create']" class="btn btn-default btn-lg">
-      <span class="glyphicon glyphicon-plus" aria-hidden="true">+</span>
+      <i class="far fa-plus"></i>
     </a>
   </h1>
   <table class="table">
@@ -24,7 +24,7 @@
         <td>{{ record.created_date }}</td>
         <td>
           <a [routerLink]="['/taxcalcrecord-details',record._id]" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicons-note" aria-hidden="true">Details</span>
+            <i class="far fa-indent"></i>
           </a>
         </td>
       </tr>
